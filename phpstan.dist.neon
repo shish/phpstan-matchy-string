@@ -1,0 +1,21 @@
+parameters:
+  level: 8
+  paths:
+    - src
+    - tests
+  reportMaybesInMethodSignatures: false
+  reportMaybesInPropertyPhpDocTypes: true
+  strictRules:
+    booleansInConditions: false
+    disallowedEmpty: false
+    disallowedShortTernary: false
+    noVariableVariables: false
+  matchyStrings:
+    types:
+      url-string:
+        regex: '#^https?://#'
+      email-string:
+        regex: '/^.*@.*$/'
+includes:
+  - vendor/phpstan/phpstan-strict-rules/rules.neon
+  - ./rules.neon

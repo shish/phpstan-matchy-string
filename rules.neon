@@ -1,0 +1,13 @@
+services:
+  - class: Shish\PhpstanMatchyString\MatchyStringTypeNodeResolverExtension
+    tags: [phpstan.phpDoc.typeNodeResolverExtension]
+    arguments:
+      types: %matchyStrings.types%
+parametersSchema:
+  matchyStrings: structure([
+    types: arrayOf(anyOf(
+        structure([
+            regex: string()
+        ])
+    ))
+  ])
