@@ -3,14 +3,16 @@
 /**
  * @param url-string $url
  */
-function fetchUrl(string $url): void {
+function fetchUrl(string $url): void
+{
     print("Fetching $url!");
 }
 
 /**
  * @param email-string $email
  */
-function sendEmail(string $email): void {
+function sendEmail(string $email): void
+{
     print("Sending an email to $email!");
 }
 
